@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <title>Renkler Ödevi</title>
+  <style>
+    /* Sayfa kenar boşluklarını sıfırla */
+    html, body {
+      margin: 0;
+      height: 100%;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh; /* tam ekran yüksekliği */
+    }
+
+    .top {
+      display: flex;
+      flex: 1; /* üst bölüm yüksekliğinin payı */
+      gap: 6px; /* aradaki boşluk (resimdeki gri çizgi efekti için) */
+      padding: 6px;
+      box-sizing: border-box;
+      background: #d0d0d0; /* kenar/gri çerçeve efekti */
+    }
+
+    .top .left {
+      flex: 1;
+      background: #FFA500; /* turuncu */
+      border: 4px solid #e0e0e0;
+      box-sizing: border-box;
+    }
+
+    .top .right {
+      flex: 1;
+      background: #0000FF; /* mavi */
+      border: 4px solid #e0e0e0;
+      box-sizing: border-box;
+    }
+
+    .bottom {
+      height: 45%; /* alt bloğun yüksekliği (isteğe göre ayarla) */
+      margin: 6px;
+      background: #FF0000; /* kırmızı */
+      border: 4px solid #e0e0e0;
+      box-sizing: border-box;
+    }
+
+    /* Responsive (dar ekranlarda üst iki blok alt alta sıralansın) */
+    @media (max-width: 600px) {
+      .top { flex-direction: column; }
+      .bottom { height: 35%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top">
+      <div class="left"></div>
+      <div class="right"></div>
+    </div>
+    <div class="bottom"></div>
+  </div>
+</body>
+</html>
