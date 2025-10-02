@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-content{
+    background-color: #3E3232;
+    min-height: 100vh;
+    color: #A87C7C;
+    font-family: "Gill Sans", calibri;
+    overflow: hidden;
+    padding: 10px 10%;
+}
+
+
+nav{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .logo{
+    color: #d4b3b3;
+    font-size: 30px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+
+nav ul li a{
+    color: #A87C7C;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: .5s all ease-in;
+}
+
+nav ul li a:hover{
+    background-color: #A87C7C;
+    color: #3E3232;
+}
+
+
+
+
+.content{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content h1{
+    font-size: 65px;
+    font-weight: 500;
+}
+
+.content h1 span{
+    color: #d4b3b3;
+}
+
+.content p{
+    margin: 2rem 0;
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 1.7;
+}
+
+.content .btn{
+    color: #A87C7C;
+    border: 2px solid #A87C7C;
+    padding: 10px 45px;
+    border-radius: 40px;
+    font-size: 25px;
+    text-decoration: none;
+    transition: .5s all ease-in;
+}
+
+.content .btn:hover{
+    background-color: #A87C7C;
+    color: #503C3C;
+}
+
+.social{margin-top: 4rem;}
+
+.social .fab{
+    font-size: 30px;
+    margin-left: 20px;
+    padding: 10px;
+    color: #d4b3b3;
+    border-radius: 20px;
+    transition: .5s all ease-in-out;
+}
+
+.social .fab:hover{
+    background-color: #A87C7C;
+    color: #503C3C;
+}
+
+.right{
+    border-top-right-radius: 50px;
+    border-top-left-radius: 120px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 5px;
+    background-color:#A87C7C;
+}
+
+.right img{
+    width: 370px;
+    animation: move 4s linear infinite;
+}
+
+@keyframes move {
+    0%, 100%{
+        transform: translateX(-50px);
+    }
+
+    50%{ transform: translateX(50px);}
+}

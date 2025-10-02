@@ -1,0 +1,27 @@
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    cursor: none;
+    background-color: #222;
+}
+
+.cursor-dot{
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+}
+
+.cursor-border{
+    width: 60px;
+    height: 60px;
+    border: 3px solid #fff;
+}
+
+.cursor-border, .cursor-dot{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    border-radius: 50% ;
+    pointer-events: none;
+}

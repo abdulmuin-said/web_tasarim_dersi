@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f1ed;
+
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding-top: 3rem;
+}
+
+.yeniNot{
+    background-color: #9ec862;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
+
+.notlar {
+  background-color: #dad2bc;
+  box-shadow: 0 50px 20px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  width: 400px;
+  height: 400px;
+}
+
+.notlar .araclar {
+  background-color: #9ec862;
+  display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+}
+
+.notlar .araclar button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.notlar .notSayfa {
+   background-color: lightgoldenrodyellow;
+  overflow: hidden;
+  height: 400px;
+  width: 100%;
+  padding: 30px;
+}
+
+.notlar textarea {
+    padding: 30px;
+    outline: none;
+    font-family: inherit;
+    font-size: 1.2rem;
+    border: none;
+    height: 400px;
+    width: 100%;
+    background-color: #DAD2BC;
+}
+
+.notlar .hidden {
+    display: none;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Şifre Üretme Uygulaması</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="pw-container">
+      <div class="pw-header">
+        <div class="pw" >
+            <span id="pw"></span>
+          <button id="copy">Kopyala</button>
+        </div>
+      </div>
+      <div class="pw-body">
+        <div class="form-control">
+          <label for="len">Şifre Uzunluğu (8-20)</label>
+          <input
+            id="len"
+            type="number"
+            min="8"
+            max="20"
+            value=8
+          />
+        </div>
+        <div class="form-control">
+          <label for="upper">Büyük Harf içersin</label>
+          <input id="upper" type="checkbox" />
+        </div>
+        <div class="form-control">
+          <label for="lower">küçük harf içersin</label>
+          <input id="lower" type="checkbox" />
+        </div>
+        <div class="form-control">
+          <label for="number">Sayı İçersin</label>
+          <input id="number" type="checkbox" />
+        </div>
+        <div class="form-control">
+          <label for="symbol">Sembol İçersin</label>
+          <input id="symbol" type="checkbox" />
+        </div>
+        <button class="generate" id="generate">Şifre Üret</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

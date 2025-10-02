@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #A99985;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+label {
+    color:black;
+    font-size: 1.5rem;
+}
+
+input {
+    background-color: #DAD2BC;
+    border-radius: 10px;
+    border: none;
+/*     box-shadow: 0px 0px 30px 1px #D80032 ; */
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-bottom: 5rem;
+    width: 300px;
+}
+input::placeholder {
+    color: #A99985;
+
+}
+input:focus {
+    outline: none;
+}
+.card {
+    background-color: #F5F1ED;
+    box-shadow: 0px 0px 50px 1px #252323;
+    border-radius: 20px;
+   
+    display: flex;
+    padding: 3rem;
+    max-width: 800px;
+}
+
+.avatar {
+    border: 10px solid #252323;
+    border-radius: 70%;
+    height: 200px;
+    width: 200px;
+}
+
+.profil-bilgi  {
+    color: black;
+    margin-left: 2rem;
+    font-size: 1.3rem;
+}
+
+.profil-bilgi h2 {
+    margin-top: 0;
+} 
+
+.profil-bilgi ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    max-width: 400px;
+}
+
+.profil-bilgi ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.profil-bilgi ul li strong {
+  
+    font-size: 1.1rem;
+    margin-left: 0.5rem;
+}
+
+.repo {
+    background-color: #DAD2BC;
+    border-radius: 5px;
+    display: inline-block;
+    color: black;
+    font-size: 0.9rem;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+
